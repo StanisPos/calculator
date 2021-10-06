@@ -1,7 +1,5 @@
-body {
-  background-color: red;
-
-  h1 {
-    color: white;
-  }
-}
+@import "./mixins/styles.scss";
+@import "./main/styles.scss";
+@import "./nav/styles.scss";
+@import "./screen/styles.scss";
+@import "./controls/styles.scss";

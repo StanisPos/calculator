@@ -1,0 +1,33 @@
+.calc__nav {
+  border: 1px solid black;
+
+  &-list {
+    @include reset-list;
+    display: flex;
+    align-items: center;
+  }
+
+  &-item {
+    &:last-of-type {
+      margin-left: auto;
+    }
+  }
+
+  &-btn {
+    @include reset-btn;
+    @include text;
+    padding: 10px;
+    border-radius: 20px;
+
+    &--theme {
+      background-image: url("/assets/icons/moon.png");
+      background-size: contain;
+    }
+
+    &.active {
+      color: #ffffff;
+      background-color: green;
+    }
+  }
+}
+

@@ -1,0 +1,9 @@
+.calc__controls {
+  margin-top: 5px;
+  min-height: 300px;
+  border: 1px solid black;
+
+  &-btn {
+    @include reset-btn;
+  }
+}

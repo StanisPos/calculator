@@ -8,5 +8,31 @@
   <title>Calculator</title>
 </head>
 <body>
+<main class='calc'>
+  <section class='calc__wrapper'>
+    <nav class='calc__nav'>
+      <ul class='calc__nav-list'>
+        <li class='calc__nav-item'>
+          <button class='calc__nav-btn calc__nav-btn--calculator'>Calculator</button>
+        </li>
+        <li class='calc__nav-item'>
+          <button class='calc__nav-btn active calc__nav-btn--converter'>Converter</button>
+        </li>
+        <li class='calc__nav-item'>
+          <button class='calc__nav-btn calc__nav-btn--theme'></button>
+        </li>
+      </ul>
+    </nav>
+    <div class='calc__inner'>
+      <div class='calc__screen'>
+        <p class='calc__screen-field calc__screen-field--text'>text</p>
+        <p class='calc__screen-field calc__screen-field--number'>number</p>
+      </div>
+      <div class='calc__controls'>
+        <button class='calc__controls-btn'>AC</button>
+      </div>
+    </div>
+  </section>
+</main>
 </body>
 </html>

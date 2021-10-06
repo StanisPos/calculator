@@ -1,0 +1,9 @@
+.calc__screen {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  min-height: 150px;
+  border: 1px solid black;
+}

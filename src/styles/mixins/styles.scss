@@ -1,0 +1,20 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin reset-btn {
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+@mixin text {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+  text-decoration: none;
+}

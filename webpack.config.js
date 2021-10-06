@@ -24,7 +24,7 @@ module.exports = {
         },
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /(\.css|\.scss)$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader', {
           loader: 'postcss-loader',
           options: {
@@ -39,14 +39,8 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif|svg)$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: true,
-            },
-          },
-        ],
+        include: path.join(__dirname, 'assets/img'),
+        loader: 'file-loader',
       },
     ],
   },
