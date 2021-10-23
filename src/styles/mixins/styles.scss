@@ -13,13 +13,15 @@
 }
 
 @mixin text {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   line-height: 1;
   text-decoration: none;
 }
 
 @mixin control-base {
+  @include text;
+
   width: $control-size;
   height: $control-size;
   line-height: $control-size;
