@@ -14,16 +14,27 @@
 
 @mixin text {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  line-height: 1;
+  font-size: 1.4rem;
   text-decoration: none;
 }
 
+@mixin centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin control-base {
+  @include centering;
   @include text;
 
   width: $control-size;
   height: $control-size;
-  line-height: $control-size;
-  text-align: center;
+  cursor: pointer;
+}
+
+@mixin control-hover {
+  background-color: purple;
+  border-radius: 50%;
+  transition: background-color ease-out 300ms;
 }
