@@ -18,3 +18,10 @@
   line-height: 1;
   text-decoration: none;
 }
+
+@mixin control-base {
+  width: $control-size;
+  height: $control-size;
+  line-height: $control-size;
+  text-align: center;
+}

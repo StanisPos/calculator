@@ -1,0 +1,40 @@
+$control-sections: (
+  'addition': 'row',
+  'operand': 'column',
+  'numbers': 'row-reverse',
+);
+
+.control {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 400px;
+  border: 1px solid black;
+
+  @each $section, $direction in $control-sections {
+    &-#{$section} {
+      &__list {
+        @include reset-list;
+
+        display: flex;
+        flex-direction: #{$direction};
+        flex-wrap: wrap;
+      }
+
+      &__item {
+        @include control-base;
+      }
+    }
+  }
+
+  &-operand {
+    &__item {
+      transform: scale(1.5);
+    }
+  }
+
+  &-numbers {
+    width: 216px
+  }
+}
